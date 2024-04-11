@@ -1,0 +1,56 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "ignore": [
+      "services",
+      "cli/bin/dist",
+      "bin/dist",
+      "build",
+      "public/build",
+      "apps/shifsync/public",
+      "apps/shifsync/public/build"
+    ],
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 90,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": [
+      "services",
+      "cli/bin/dist",
+      "bin/dist",
+      "build",
+      "public/build",
+      "apps/shifsync/public",
+      "apps/shifsync/public/build"
+    ],
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noParameterAssign": "off",
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off",
+        "noStaticOnlyClass": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      }
+    }
+  }
+}
