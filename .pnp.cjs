@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.57.0"],\
           ["eslint-plugin-react-hooks", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:0.4.6"],\
+          ["framer-motion", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:11.0.28"],\
           ["lefthook", "npm:1.6.10"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:18.2.0"],\
@@ -1521,6 +1522,37 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["framer-motion", [\
+      ["npm:11.0.28", {\
+        "packageLocation": "../../.yarn/berry/cache/framer-motion-npm-11.0.28-7d2e5a5790-10c0.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "npm:11.0.28"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:11.0.28", {\
+        "packageLocation": "./.yarn/__virtual__/framer-motion-virtual-7cc374aa3b/3/.yarn/berry/cache/framer-motion-npm-11.0.28-7d2e5a5790-10c0.zip/node_modules/framer-motion/",\
+        "packageDependencies": [\
+          ["framer-motion", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:11.0.28"],\
+          ["@emotion/is-prop-valid", null],\
+          ["@types/emotion__is-prop-valid", null],\
+          ["@types/react", "npm:18.2.75"],\
+          ["@types/react-dom", "npm:18.2.24"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:18.2.0"],\
+          ["tslib", "npm:2.6.2"]\
+        ],\
+        "packagePeers": [\
+          "@emotion/is-prop-valid",\
+          "@types/emotion__is-prop-valid",\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["fs-minipass", [\
       ["npm:2.1.0", {\
         "packageLocation": "../../.yarn/berry/cache/fs-minipass-npm-2.1.0-501ef87306-10c0.zip/node_modules/fs-minipass/",\
@@ -1635,6 +1667,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.57.0"],\
           ["eslint-plugin-react-hooks", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:0.4.6"],\
+          ["framer-motion", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:11.0.28"],\
           ["lefthook", "npm:1.6.10"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:1dce758ab4b665733c937bbe2cd32a95ac662f3d111d7e241c2213c50624c7d0355fb545ef593e335d299dca5a8253951c75a905f4d0104d982415d44771e93d#npm:18.2.0"],\
@@ -2721,6 +2754,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/text-table-npm-0.2.0-d92a778b59-10c0.zip/node_modules/text-table/",\
         "packageDependencies": [\
           ["text-table", "npm:0.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tslib", [\
+      ["npm:2.6.2", {\
+        "packageLocation": "../../.yarn/berry/cache/tslib-npm-2.6.2-4fc8c068d9-10c0.zip/node_modules/tslib/",\
+        "packageDependencies": [\
+          ["tslib", "npm:2.6.2"]\
         ],\
         "linkType": "HARD"\
       }]\
