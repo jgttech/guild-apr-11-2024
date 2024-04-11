@@ -1,4 +1,4 @@
 pre-commit:
   commands:
     check:
-      run: yarn dlx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true . && git update-index --again
+      run: npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true . && git update-index --again

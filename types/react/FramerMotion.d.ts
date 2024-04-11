@@ -1,4 +1,7 @@
 import type { MotionProps } from "framer-motion";
+import { animations } from "~/utils/animations";
+
+type AvailableAnimations = keyof typeof animations;
 
 declare global {
   export namespace FramerMotion {
@@ -6,7 +9,7 @@ declare global {
 
     export type AnimationProps = {
       duration?: FramerMotion.Duration;
-      animation?: MotionProps | UI.Animations;
+      animation?: MotionProps | AvailableAnimations;
     };
 
     export type AnimationArgs = {
@@ -20,10 +23,8 @@ declare global {
       config: FramerMotion.AnimationArgs
     ) => MotionProps;
 
-    export type Props<T> = Omit<T, keyof FramerMotion.AnimationProps> &
+    export type Props<T = {}> = Omit<T, keyof FramerMotion.AnimationProps> &
       FramerMotion.AnimationProps;
-
-    export type Element<T> = FramerMotion.Props<Omit<T, "style"> & MotionProps>;
 
     /**
      * HTML Element + Framer Motion + React
@@ -32,16 +33,13 @@ declare global {
      * the components in a transparent way that gives all the generic
      * HTML elements support for Framer Motion animations.
      */
-    export type Div = FramerMotion.Element<Html.Div>;
-    export type Nav = FramerMotion.Element<Html.Nav>;
-    export type Head = FramerMotion.Element<Html.Head>;
-    export type Button = FramerMotion.Element<Html.Button>;
-    export type Span = FramerMotion.Element<Html.Span>;
-    export type Image = FramerMotion.Element<Html.Image>;
-    export type Input = FramerMotion.Element<Html.Input>;
-    export type Anchor = FramerMotion.Element<Html.Anchor>;
-    export type Header = FramerMotion.Element<Html.Header>;
-    export type Footer = FramerMotion.Element<Html.Footer>;
-    export type Section = FramerMotion.Element<Html.Section>;
+    export type Button = FramerMotion.Props<Html.Button & MotionProps>;
+    export type Div = FramerMotion.Props<Html.Div & MotionProps>;
+    export type Nav = FramerMotion.Props<Html.Nav & MotionProps>;
+    export type Anchor = FramerMotion.Props<Html.Anchor & MotionProps>;
+    export type Span = FramerMotion.Props<Html.Span & MotionProps>;
+    export type Header = FramerMotion.Props<Html.Header & MotionProps>;
+    export type Footer = FramerMotion.Props<Html.Footer & MotionProps>;
+    export type Section = FramerMotion.Props<Html.Section & MotionProps>;
   }
 }

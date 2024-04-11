@@ -3,54 +3,28 @@
   "organizeImports": {
     "enabled": true
   },
-  "formatter": {
-    "enabled": true,
-    "ignore": [
-      "services",
-      "cli/bin/dist",
-      "bin/dist",
-      "build",
-      "public/build",
-      "apps/shifsync/public",
-      "apps/shifsync/public/build"
-    ],
-    "indentStyle": "space",
-    "indentWidth": 2,
-    "lineWidth": 90,
-    "lineEnding": "lf"
+  "files": {
+    "ignoreUnknown": true,
+    "include": ["vite.config.ts", "src/**/*"]
   },
   "linter": {
     "enabled": true,
-    "ignore": [
-      "services",
-      "cli/bin/dist",
-      "bin/dist",
-      "build",
-      "public/build",
-      "apps/shifsync/public",
-      "apps/shifsync/public/build"
-    ],
     "rules": {
       "recommended": true,
       "style": {
-        "noParameterAssign": "off",
-        "noNonNullAssertion": "off",
-        "noUnusedTemplateLiteral": "off"
-      },
-      "performance": {
-        "noDelete": "off"
-      },
-      "complexity": {
-        "noBannedTypes": "off",
-        "noStaticOnlyClass": "off"
+        "noNonNullAssertion": "off"
       },
       "suspicious": {
-        "noExplicitAny": "off",
-        "noArrayIndexKey": "off"
-      },
-      "correctness": {
-        "useExhaustiveDependencies": "off"
+        "noExplicitAny": "off"
       }
     }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
   }
 }
